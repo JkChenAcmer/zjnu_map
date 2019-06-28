@@ -1,0 +1,27 @@
+<view class='mingpian'>
+  <view class='neirong'>
+    <view class='imgstyle'>
+      <image src='/images/headpic.png'></image>
+    </view>
+    <text class='name'>{{name}}</text>
+  </view>
+</view>
+<view class='infomation'>
+  <view class='info'>
+    <text>课程：{{course}}</text>
+  </view>
+  <view class='info'>
+    <text>手机号：{{tele}}</text>
+  </view>
+  <view class='info'>
+    <text>邮箱：{{mail}}</text>
+  </view>
+  <view class='info'>
+    <text>办公室：{{office_x}} {{office_y}}</text>
+  </view>
+</view>
+
+
+<view bindtap='showInMap'>
+  <image class='imageButton' src='/images/next.png'></image>
+</view>

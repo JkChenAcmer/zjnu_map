@@ -1,0 +1,12 @@
+
+<view class='con'>
+  <view class="imageStyle">
+    <image src="/images/tilogo.png"></image>
+  </view>
+  <text class='zsdt'>浙师地图</text>
+</view>
+<view class='anniu'>
+  <image src="/images/gnjs.png" bindtap='gnjsClick'></image>
+  <image src="/images/yjfk.png" bindtap='yjfkClick'></image>
+  <image src="/images/spx.png" ></image>
+</view>

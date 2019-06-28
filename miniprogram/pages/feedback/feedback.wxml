@@ -1,0 +1,10 @@
+<form bindsubmit="formSubmit">
+  <view class="contant_wrap">
+    <view class="contant">
+      <textarea name="evaContext" value="{{context}}" auto-height placeholder-class="placeholder" placeholder="为了带给您更好的体验,期待您的任何反馈,我们将会不断改进" bindinput='charChange' />
+    </view>
+  </view>
+  <input name="contant" value="{{contant}}" type='number' auto-height placeholder-class="placeholder" placeholder="您的手机号或者邮箱,方便我们及时给您回复" />
+  <button form-type="submit" hover-class="none" loading="{{loading}}">提交</button>
+</form>
+

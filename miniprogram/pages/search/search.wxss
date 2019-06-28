@@ -1,0 +1,159 @@
+page {
+  background: #f6f6f6;
+  height: 100%;
+  width: 100%;
+}
+
+.textBoxALL{
+  background-color:#fff;
+  height:100%;
+  border: 1rpx solid #000;
+
+}
+
+.textBox {
+  position: absolute;
+  top:0;
+  background-color: #f6f6f6;
+  height: 35px;
+  width: 90%;
+  padding: 5%;
+  padding-bottom: 0;
+  z-index: 100;
+    box-shadow: 0rpx 15rpx 20rpx 0rpx #f6f6f6;
+}
+
+.textImage {
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  right: 0;
+  z-index: 200;
+}
+
+.textInput {
+  background-color: #fff;
+  height: 100%;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-left: 3%;
+}
+
+.searchBox {
+  height: 90%;
+  width: 100%;
+  margin-top: 16%;
+  background-color: none;
+}
+
+.searchItem {
+  vertical-align: middle;
+  height: 40px;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.searchItemBefore{
+  height: 35rpx;
+  width: 35rpx;
+  margin-left: 5px;
+}
+
+.searchItemAfter{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 5px;
+}
+
+/* .searchItem:nth-child(2n) {
+  margin-left: 10%;
+}
+
+.searchItem:nth-child(2n-1) {
+  margin-right: 10%;
+} */
+
+text {
+  font-size: 20px;
+  margin-left: 3%;
+  color: rgba(5, 36, 75, 0.932);
+}
+
+.weui-search-bar__box {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.list-msg {
+  width: 15%;
+  height: 30px;
+  display: inline-flex;
+  white-space: nowrap;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.cons {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.choice-bar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+}
+
+.chioce-item {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  width: 15%;
+  height: 29px;
+  border: 1rpx solid #000;
+}
+
+.chioce-item image{
+height: 30rpx;
+  width: 30rpx;
+}
+
+.district-list, .sorting-list, .filter-list {
+  margin-top: 2rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  width: 30%;
+  background-color: #fff;
+  z-index: -1;
+  font-size: 14px;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.chioce-list-hide {
+  display: none !important;
+}
+
+.chioce-list-show {
+  animation: slide 500ms;
+}
+
+.sorting-item {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 40rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+

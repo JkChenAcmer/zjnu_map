@@ -1,0 +1,36 @@
+/**index.wxss**/
+page {
+  background: #F6F6F6;
+  height: 100%;
+  width: 100%;
+}
+.search{
+  width: 80%;
+  padding-top: 15px;
+  padding-left: 37px;
+}
+
+.cancelSelected{
+  position: absolute;
+  left: 20px;
+  top: 340px;
+  width: 30px;
+  height: 30px;
+}
+
+.gothere{
+  position: absolute;
+  left: 20px;
+  top: 380px;
+  width: 30px;
+  height: 30px;
+}
+
+/* .button{
+  background-color: aquamarine;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  font-size: 20rpx;
+} */
+

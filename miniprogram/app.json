@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/about/about",
+    "pages/info_function/info_function",
+    "pages/feedback/feedback",
+    "pages/teacher_info/teacher_info"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "浙师地图",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/indexs.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/abouts.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "xxx"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.wenben{
+  height: 50%;
+  align-content: center;
+  padding: 20rpx;
+}
+text{
+  font-family: "幼圆";
+  font-size: 16px;
+}

@@ -1,0 +1,36 @@
+<view class="weui-search-bar textBox">
+  <view class="weui-search-bar__form" style='position:relative;height:100%'>
+    <!-- clear -->
+    <image class='textImage' wx:if="{{wxSearchData.length > 0}}" bindtap="image_tap" src='../../images/cancel.png'></image>
+    <view class='cons'>
+      <!-- 下拉菜单 -->
+      <view class='list-msg'>
+        <view class="choice-bar">
+          <view bindtap="opens" data-item="1" class="chioce-item" hover-class="click-once-opaque">{{start}}
+          <image src='{{isstart?openimg:offimg}}'></image>
+          </view>
+          <view class="sorting-list{{!isstart?' chioce-list-hide':' chioce-list-show'}}">
+            <view wx:for="{{slist}}" catchtap="onclicks1" data-index="{{index}}" class="sorting-item" hover-class="click-once" wx:key="userInfoListId">{{item.name}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="weui-search-bar__box textBoxALL">
+
+        <!-- 文本框 bindinput输入时触发  bindconfirm点击完成按钮时触发 -->
+        <input type="text" class="weui-search-bar__input textInput" placeholder="请输入搜索内容" value="{{wxSearchData}}" bindinput="wxSearchInput" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- wx:for循环生成多个view时，{{item.属性名}}可以获取数组中元素的属性值 -->
+<!-- 整个对象树内，都可以用item访问 -->
+<scroll-view scroll-y class='searchBox'>
+  <view data-idx='{{item.idx}}' class='searchItem' wx:for ="{{result}}" wx:key="{{idx}}" bindtap="click">
+  <image class='searchItemBefore' src='/images/select.png'></image>
+    <text style='font-size:14px'>{{item.name}}
+    </text>
+    <image class='searchItemAfter' src='/images/in.png'></image>
+  </view>
+</scroll-view>
